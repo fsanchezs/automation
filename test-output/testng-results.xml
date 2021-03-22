@@ -2,42 +2,38 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="56008" started-at="2021-03-22T03:39:55Z" finished-at="2021-03-22T03:40:51Z">
+  <suite name="Suite" duration-ms="54941" started-at="2021-03-22T06:39:39Z" finished-at="2021-03-22T06:40:34Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="56008" started-at="2021-03-22T03:39:55Z" finished-at="2021-03-22T03:40:51Z">
+    <test name="Test" duration-ms="54941" started-at="2021-03-22T06:39:39Z" finished-at="2021-03-22T06:40:34Z">
       <class name="testCases.Product">
-        <test-method status="PASS" signature="abrirNavegador()[pri:0, instance:testCases.Product@490ab905]" name="abrirNavegador" is-config="true" duration-ms="17356" started-at="2021-03-22T03:39:55Z" finished-at="2021-03-22T03:40:12Z">
+        <test-method status="PASS" signature="abrirNavegador()[pri:0, instance:testCases.Product@490ab905]" name="abrirNavegador" is-config="true" duration-ms="16079" started-at="2021-03-22T06:39:39Z" finished-at="2021-03-22T06:39:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- abrirNavegador -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:testCases.Product@490ab905]" name="setup" is-config="true" duration-ms="3413" started-at="2021-03-22T03:40:13Z" finished-at="2021-03-22T03:40:17Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testCases.Product@490ab905]" name="setup" is-config="true" duration-ms="435" started-at="2021-03-22T06:39:55Z" finished-at="2021-03-22T06:39:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="searchProduct()[pri:0, instance:testCases.Product@490ab905]" name="searchProduct" duration-ms="29199" started-at="2021-03-22T03:40:17Z" finished-at="2021-03-22T03:40:46Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="searchProduct()[pri:0, instance:testCases.Product@490ab905]" name="searchProduct" duration-ms="32783" started-at="2021-03-22T06:39:55Z" finished-at="2021-03-22T06:40:28Z">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//body/div[4]/div[6]/div[1]/div[1]/div[2]/div[1]/div[1]/h1[1]/span[1]"}
+              <![CDATA[element not interactable
   (Session info: chrome=89.0.4389.90)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-KCE14NL', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\NANDO~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53045}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 35e85459632f2b8f7244cf0908b5682f
-*** Element info: {Using=xpath, value=//body/div[4]/div[6]/div[1]/div[1]/div[2]/div[1]/div[1]/h1[1]/span[1]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\NANDO~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49216}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7802159399bdbfbe962fde56811a805c]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//body/div[4]/div[6]/div[1]/div[1]/div[2]/div[1]/div[1]/h1[1]/span[1]"}
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=89.0.4389.90)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-KCE14NL', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\NANDO~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53045}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 35e85459632f2b8f7244cf0908b5682f
-*** Element info: {Using=xpath, value=//body/div[4]/div[6]/div[1]/div[1]/div[2]/div[1]/div[1]/h1[1]/span[1]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\NANDO~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49216}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7802159399bdbfbe962fde56811a805c
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -48,12 +44,10 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.project.pom.Base.getText(Base.java:69)
-at Business.SearchProduct.chooseProduct(SearchProduct.java:52)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at com.project.pom.Base.click(Base.java:96)
+at Business.SearchProduct.chooseProduct(SearchProduct.java:59)
 at testCases.Product.searchProduct(Product.java:45)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -82,11 +76,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchProduct -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.Product@490ab905]" name="tearDown" is-config="true" duration-ms="3167" started-at="2021-03-22T03:40:46Z" finished-at="2021-03-22T03:40:49Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.Product@490ab905]" name="tearDown" is-config="true" duration-ms="1622" started-at="2021-03-22T06:40:28Z" finished-at="2021-03-22T06:40:30Z">
           <params>
             <param index="0">
               <value>
@@ -97,7 +91,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="cerrarNavegador()[pri:0, instance:testCases.Product@490ab905]" name="cerrarNavegador" is-config="true" duration-ms="1873" started-at="2021-03-22T03:40:49Z" finished-at="2021-03-22T03:40:51Z">
+        <test-method status="PASS" signature="cerrarNavegador()[pri:0, instance:testCases.Product@490ab905]" name="cerrarNavegador" is-config="true" duration-ms="3956" started-at="2021-03-22T06:40:30Z" finished-at="2021-03-22T06:40:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cerrarNavegador -->

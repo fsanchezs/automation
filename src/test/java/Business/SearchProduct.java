@@ -49,7 +49,7 @@ public class SearchProduct extends Base {
 		click(btnAplicar);
 		espera();
 		click(talla);
-		System.out.println(getText(lblResultado));
+		System.out.println("El resultado de productos es: "+getText(lblResultado));
 		click(btnOrdenamiento);
 		click(opcionMenorPrecio);
 		printText(lblPrecio,5);
@@ -59,7 +59,7 @@ public class SearchProduct extends Base {
 		click(btnOrdenamientoMayor);
 		espera();
 		
-		//sendEmail();
+		sendEmail();
 		return true;
 	}
 	

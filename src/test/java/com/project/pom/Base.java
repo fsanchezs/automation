@@ -133,7 +133,7 @@ public class Base {
 	
 	public void sendEmail() throws EmailException{
 		  EmailAttachment attachment = new EmailAttachment();
-		  attachment.setPath("C:\\Users\\N A N D O\\Workspace\\T_ebay\\");
+		  attachment.setPath("C:\\Users\\N A N D O\\Workspace\\T_ebay\\Reports\\learn_automation2.html");
 		  attachment.setDisposition(EmailAttachment.ATTACHMENT);
 		  attachment.setDescription("Report");
 		  attachment.setName("reporte");
@@ -143,7 +143,7 @@ public class Base {
 		  email.setHostName("smtp.gmail.com");
 		  email.setSSL(true); 
 		  email.setSmtpPort(587);
-		  email.setAuthentication("f.sanchez630@gmail.com", "xxxxxx");
+		  email.setAuthentication("f.sanchez630@gmail.com", "xxxxxxx");
 		  email.addTo("f.sanchez630@gmail.com", "Fernando");
 		  email.setFrom("cdorival@auna.pe", "Carlos");
 		  email.setSubject("Test Case - QA Automation");
