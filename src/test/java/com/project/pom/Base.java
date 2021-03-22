@@ -5,6 +5,9 @@ import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.mail.EmailAttachment;
+import org.apache.commons.mail.EmailException;
+import org.apache.commons.mail.MultiPartEmail;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
@@ -126,6 +129,31 @@ public class Base {
 	
 	public Base(WebDriver driver) {
 		this.driver = driver;
+	}
+	
+	public void sendEmail() throws EmailException{
+		  EmailAttachment attachment = new EmailAttachment();
+		  attachment.setPath("C:\\Users\\N A N D O\\Workspace\\T_ebay\\");
+		  attachment.setDisposition(EmailAttachment.ATTACHMENT);
+		  attachment.setDescription("Report");
+		  attachment.setName("reporte");
+
+		  // Create the email message
+		  MultiPartEmail email = new MultiPartEmail();
+		  email.setHostName("smtp.gmail.com");
+		  email.setSSL(true); 
+		  email.setSmtpPort(587);
+		  email.setAuthentication("f.sanchez630@gmail.com", "xxxxxx");
+		  email.addTo("f.sanchez630@gmail.com", "Fernando");
+		  email.setFrom("cdorival@auna.pe", "Carlos");
+		  email.setSubject("Test Case - QA Automation");
+		  email.setMsg("Mensaje enviado de las pruebas realizadas a la página de ebay");
+
+		  // add the attachment
+		  email.attach(attachment);
+
+		  // send the email
+		  email.send();
 	}
 	
 }

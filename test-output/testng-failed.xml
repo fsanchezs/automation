@@ -5,7 +5,9 @@
     <classes>
       <class name="testCases.Product">
         <methods>
+          <include name="tearDown"/>
           <include name="abrirNavegador"/>
+          <include name="setup"/>
           <include name="searchProduct"/>
           <include name="cerrarNavegador"/>
         </methods>

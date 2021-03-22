@@ -24,8 +24,8 @@ public class SearchProduct extends Base {
 	By lblResultado = By.xpath("//body/div[4]/div[6]/div[1]/div[1]/div[2]/div[1]/div[1]/h1[1]/span[1]");
 	By btnOrdenamiento = By.xpath("//body/div[4]/div[6]/div[1]/div[1]/div[2]/div[1]/div[1]/h1[1]/span[1]");
 	By opcionMenorPrecio = By.xpath("//body/div[4]/div[6]/div[1]/div[1]/div[2]/div[1]/div[1]/h1[1]/span[1]");
-	//"//div[@id='srp-river-main']/div[2]/ul/li/div";
 	By lblPrecio = By.xpath("//div[@id='srp-river-main']/div[2]/ul/li/div/div[2]/div[4]/div[1]/span");
+	By btnOrdenamientoMayor = By.xpath("//body[1]/div[4]/div[6]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/span[1]/span[1]/div[1]/a[5]");
 	
 	Boolean flag = false;
 	
@@ -35,7 +35,7 @@ public class SearchProduct extends Base {
 		driver.get(url);
 	}
 	
-	public Boolean chooseProduct() throws InterruptedException, IOException {
+	public Boolean chooseProduct() throws InterruptedException, IOException, EmailException {
 
 		type("Gorra", txtProducto);
 		click(btnBuscar);
@@ -53,7 +53,14 @@ public class SearchProduct extends Base {
 		click(btnOrdenamiento);
 		click(opcionMenorPrecio);
 		printText(lblPrecio,5);
-		return flag;
+		espera();
+		click(btnOrdenamiento);
+		espera();
+		click(btnOrdenamientoMayor);
+		espera();
+		
+		//sendEmail();
+		return true;
 	}
 	
 	public SearchProduct(WebDriver driver) {
